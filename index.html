@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,500,400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="topnav" id="topnav">
+      <div class="logo">
+        <img class="logo-img" src="/images/shop.svg" alt="shop logo" />
+        <div class="logo-name">
+          <h3 class="first-name">Shane</h3>
+          <h3 class="last-name">Gouldson</h3>
+        </div>
+      </div>
+
+      <div class="nav-buttons">
+        <a class="button" href="#home">Home</a>
+        <a class="button" href="#mens">Mens</a>
+        <a class="button" href="#womens">Womens</a>
+        <a class="button" href="#about">About</a>
+        <a class="button" href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="img-gal-container" id="home">
+      <img
+        class="img-gal-2-col img-gal-2-row"
+        src="images/Home/main_photo.jpg"
+        alt="shopping"
+      />
+      <img src="images/Home/men.jpg" alt="shopping" />
+      <img src="images/Home/women.jpg" alt="shopping" />
+      <img src="images/Home/kids.jpg" alt="shopping" />
+      <img src="images/Home/accessories.jpg" alt="shopping" />
+    </div>
+
+    <div class="mens" id="mens">
+      <h1>Men's Latest</h1>
+      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+      <div class="mens-img-gal-container">
+        <img src="images/Mens/mens-1.jpg" alt="shopping" />
+        <img src="images/Mens/mens-2.jpg" alt="shopping" />
+        <img src="images/Mens/mens-3.jpg" alt="shopping" />
+        <img src="images/Mens/mens-4.jpg" alt="shopping" />
+      </div>
+    </div>
+
+    <div class="womens" id="womens">
+      <h1>Women's Latest</h1>
+      <h2>Vestibulum erat est, efficitur vehicula turpis.</h2>
+      <div class="womens-img-gal-container">
+        <img src="images/Womens/womens-1.jpg" alt="shopping" />
+        <img src="images/Womens/womens-2.jpg" alt="shopping" />
+        <img src="images/Womens/womens-3.jpg" alt="shopping" />
+        <img src="images/Womens/womens-4.jpg" alt="shopping" />
+      </div>
+    </div>
+
+    <div class="products-container">
+      <div class="products-header">
+        <h2>About our store...</h2>
+        <p></p>
+      </div>
+      <div class="products-content-1">
+        <h2>Our mission statement</h2>
+        <p class="products-p1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo
+          tortor, semper a sollicitudin a, dapibus sit amet turpis. Phasellus.
+        </p>
+        <h3><i>Vivamus aliquam, arcu vitae efficitur.</i></h3>
+        <p class="p2">
+          Vestibulum orci nibh, pellentesque eu sem vitae, interdum laoreet
+          elit. Fusce maximus leo pretium lectus finibus accumsan. Maecenas
+          magna lacus, posuere ac ullamcorper non, sagittis et massa. Nam eget
+          mollis leo, non interdum nulla. Morbi varius rutrum est. Donec vel.
+        </p>
+      </div>
+      <div class="products-img">
+        <img src="images/Products/open.jpg" alt="" />
+      </div>
+      <div class="products-img">
+        <img src="images/Products/shopping_bag.jpg" alt="" />
+      </div>
+      <div class="products-img">
+        <img src="images/Products/hat.jpg" alt="" />
+      </div>
+      <div class="products-img">
+        <img src="images/Products/bag.jpg" alt="" />
+      </div>
+
+      <div class="products-footer">
+        <h3>Shop over 510 different products</h3>
+      </div>
+    </div>
+
+    <div class="contact-container" id="">
+      <h1>Get in touch!</h1>
+      <p>Thanks for checkin' out this project made by me, Shane!</p>
+
+      <div class="contact">
+        <div class="contact-left">
+          <h3>Send a request</h3>
+          <form>
+            <div class="input-row">
+              <div class="input-group">
+                <label>Name</label>
+                <input type="text" placeholder="Your Name" />
+              </div>
+              <div class="input-group">
+                <label>Phone</label>
+                <input type="text" placeholder="+1 416 647 2022" />
+              </div>
+            </div>
+
+            <div class="input-row">
+              <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="yourname@email.com" />
+              </div>
+              <div class="input-group">
+                <label>Subject</label>
+                <input type="text" placeholder="Subject" />
+              </div>
+            </div>
+
+            <label>Message</label>
+            <textarea rows="5" placeholder="What's up?"></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+
+        <div class="contact-right">
+          <h3>Reach out</h3>
+          <table>
+            <tr>
+              <td>email:</td>
+              <td>shanego416@gmail.com</td>
+            </tr>
+            <tr>
+              <td>phone:</td>
+              <td>+1 123 456 7890</td>
+            </tr>
+            <tr>
+              <td>location:</td>
+              <td>Planet earth</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
