@@ -118,7 +118,6 @@ a::after {
 /* Home Photo Gallery starts*/
 
 .home-container {
-  height: 68vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -195,6 +194,10 @@ a::after {
   }
   .home-container > .image > .image-text > a {
     font-size: 32px;
+  }
+
+  .home-container > .image > .image-text > h2 {
+    font-size: 20px;
   }
 }
 
