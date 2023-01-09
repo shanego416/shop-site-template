@@ -28,6 +28,10 @@ li {
   align-items: center;
 }
 
+.nav-bar a {
+  color: #000;
+}
+
 .nav-logo-items {
   display: flex;
   align-items: center;
@@ -69,14 +73,10 @@ li {
 
   .nav-buttons {
     display: none;
-    margin-top: 64px;
-  }
-
-  .nav-logo-items {
-    margin-bottom: -64px;
   }
 
   .logo-img {
+    margin-top: auto;
     margin-left: -16px;
   }
 
@@ -100,8 +100,8 @@ li {
   border-bottom: 3px dotted rgba(0, 0, 0, 0.2);
   border-top: 3px dotted rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  padding-top: 64px;
   padding-bottom: 64px;
-  margin-top: 64px;
   margin-bottom: 64px;
 }
 
