@@ -16,23 +16,26 @@
   </head>
 
   <body>
-    <div class="topnav" id="topnav">
-      <div class="logo">
-        <img class="logo-img" src="images/shop.svg" alt="shop logo" />
-        <div class="logo-name">
-          <h3 class="first-name">Shane</h3>
-          <h3 class="last-name">Gouldson</h3>
-        </div>
+    <nav class="nav-bar">
+      <div class="nav-logo-items">
+        <img class="logo-img" src="/images/shop.svg" alt="" />
+        <h3 class="first-name name">Shane</h3>
+        <h3 class="last-name name">Gouldson</h3>
+        <img
+          class="menu-img"
+          src="images/menu.png"
+          alt=""
+          onclick="myFunction()"
+        />
       </div>
-
-      <div class="nav-buttons">
-        <a class="button" href="#home">Home</a>
-        <a class="button" href="#mens">Mens</a>
-        <a class="button" href="#womens">Womens</a>
-        <a class="button" href="#about">About</a>
-        <a class="button" href="#contact">Contact</a>
-      </div>
-    </div>
+      <ul class="nav-buttons" id="nav-buttons">
+        <li class="nav-button">Home</li>
+        <li class="nav-button">About</li>
+        <li class="nav-button">Mens</li>
+        <li class="nav-button">Womens</li>
+        <li class="nav-button">Contact</li>
+      </ul>
+    </nav>
 
     <div class="home-container">
       <div class="image image-1">
@@ -206,4 +209,9 @@
       </div>
     </div>
   </body>
+  <script>
+    function myFunction() {
+      document.getElementById("nav-buttons").style.display = "block";
+    }
+  </script>
 </html>

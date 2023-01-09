@@ -19,100 +19,74 @@ a::after {
 }
 
 /* NAV Starts*/
-
-.topnav {
-  display: flex;
-  justify-content: space-around;
-  background-color: white;
-  overflow: hidden;
-  font-family: Poppins, sans-serif;
-  padding-bottom: 16px;
-  padding-top: 16px;
-  border-bottom: 3px dotted rgba(0, 0, 0, 0.2);
-  overflow: hidden;
+li {
+  list-style: none;
 }
 
-.logo {
+.nav-bar {
   display: flex;
+  align-items: center;
 }
 
-.logo-name {
+.nav-logo-items {
   display: flex;
-  align-items: flex-end;
-  padding: 0px 8px;
-  font-weight: lighter;
+  align-items: center;
 }
 
-.nav-buttons {
-  display: flex;
-  align-items: flex-end;
+.logo-img {
+  width: 10vh;
+  padding: 32px;
 }
 
-.button {
-  padding: 0px 16px;
+.name {
+  padding: 0px 2px;
+  border-bottom: 1px solid black;
 }
 
 .first-name {
-  padding-right: 4px;
-  padding-left: 4px;
-  font-weight: lighter;
-  border-top: 1px solid #ccc;
-  border-left: 1px solid #ccc;
+  border-right: none;
 }
 
-.last-name {
-  font-weight: lighter;
-  padding-right: 4px;
-  border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-}
-
-.topnav > .logo > img {
-  max-width: 64px;
-  max-height: 64px;
-}
-
-/* nav links style*/
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
+.nav-buttons {
   text-decoration: none;
-  font-size: 17px;
-  font-family: Poppins, sans-serif;
+  display: flex;
+  margin-left: auto;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  color: #ccc;
+.nav-button {
+  padding: 16px;
 }
 
-@media screen and (max-width: 800px) {
-  .topnav {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.menu-img {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .nav-bar {
+    display: block;
+    border: none;
   }
 
   .nav-buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 16px 2px;
+    display: none;
+    margin-top: 64px;
   }
 
-  .logo-name {
-    display: none;
+  .nav-logo-items {
+    margin-bottom: -64px;
   }
 
   .logo-img {
-    margin: auto;
-    padding-top: 16px;
+    margin-left: -16px;
+  }
+
+  .menu-img {
+    display: block;
+    margin-left: auto;
+    margin-right: 16px;
+    padding-bottom: 14px;
   }
 }
-
 /* NAV Ends*/
 
 /* Home Photo Gallery starts*/
@@ -124,8 +98,10 @@ a::after {
   padding: 32px 32px;
   grid-gap: 16px;
   border-bottom: 3px dotted rgba(0, 0, 0, 0.2);
+  border-top: 3px dotted rgba(0, 0, 0, 0.2);
   overflow: hidden;
   padding-bottom: 64px;
+  margin-top: 64px;
   margin-bottom: 64px;
 }
 
