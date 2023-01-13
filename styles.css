@@ -76,6 +76,10 @@ li {
     display: none;
   }
 
+  .nav-buttons--active {
+    display: block;
+  }
+
   .logo-img {
     margin-top: auto;
     margin-left: -16px;
